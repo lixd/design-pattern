@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * 构建的消息对象
- *
+ *有个静态内部类
  * @author illusoryCloud
  */
 public class Message {
@@ -38,6 +38,9 @@ public class Message {
                 '}';
     }
 
+    /**
+     * 静态内部类 Builder
+     */
     public static class Builder {
         //设置默认值
         private String Title = "未命名";
