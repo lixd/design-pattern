@@ -1,6 +1,5 @@
 package Factory.AbstractFactory;
 
-import Factory.EasyFactory.Apple;
 import Factory.EasyFactory.Fruit;
 import Factory.EasyFactory.Orange;
 

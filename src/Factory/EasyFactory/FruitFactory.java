@@ -1,7 +1,7 @@
 package Factory.EasyFactory;
 
 /**
- * 水果工厂 产品工厂
+ * 工厂类   水果工厂
  * 负责生产各种产品
  *
  * @author illusoryCloud
