@@ -1,15 +1,15 @@
 # design-pattern
 Java Design Pattern Learning   Java设计模式系列demo
 
-## 1. 单例模式(Singleton)
+## 1. 单例模式(singleton)
 
 
 
-## 2. 工厂模式(Factory)
+## 2. 工厂模式(factory)
 
-## 3. 建造者模式(Builder)
+## 3. 建造者模式(builder)
 
-## 4. 原型模式(Prototype)
+## 4. 原型模式(prototype)
 
 ## 5. 适配器模式(Adapter)
 
