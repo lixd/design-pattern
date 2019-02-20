@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 
 /**
  * CGLib动态代理 测试类
- *
+ * 需要导入两个jar包  asm包 和cglib包
+ * 下载地址： https://github.com/illusorycloud/design-pattern/tree/master/jar
  * @author illusoryCloud
  */
 public class CglibProxyTest {
