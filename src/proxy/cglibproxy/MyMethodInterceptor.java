@@ -11,11 +11,6 @@ import java.lang.reflect.Method;
  */
 public class MyMethodInterceptor implements MethodInterceptor {
     public static final String PROXY_METHOD = "work";
-    private Human human;
-
-    public MyMethodInterceptor(Human human) {
-        this.human = human;
-    }
 
     /**
      * @param o           cglib生成的代理对象
@@ -27,13 +22,11 @@ public class MyMethodInterceptor implements MethodInterceptor {
      */
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-        // 判断是否是需要代理的方法
-        if (PROXY_METHOD.equals(method.getName())) {
-            System.out.println("演唱前烘托气氛~");
-            methodProxy.invoke(o, objects);
-            System.out.println("演唱后撒花~");
-        }
-        return methodProxy.invoke(o, objects);
+        System.out.println("经纪人为舞蹈演员安排好时间~");
+        //注意 这里是invokeSuper  若是invoke则会循环调用最终堆栈溢出
+        Object o1 = methodProxy.invokeSuper(o, objects);
+        System.out.println("经纪人为舞蹈演员联系下一场演出~");
+        return o1;
 
     }
 }

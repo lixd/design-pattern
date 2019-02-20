@@ -1,13 +1,12 @@
 package proxy.cglibproxy;
 
-import proxy.staticproxy.Human;
-
 /**
+ * 被代理类 没有实现接口 无法使用JDK动态代理
+ *
  * @author illusoryCloud
  */
-public class Dancer implements Human {
-    @Override
-    public void work() {
+public class Dancer {
+    public void dance() {
         System.out.println("跳舞者翩翩起舞~");
     }
 }

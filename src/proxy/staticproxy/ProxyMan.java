@@ -22,8 +22,8 @@ public class ProxyMan implements Human {
 
     @Override
     public void work() {
-        System.out.println("演唱前烘托气氛~");
+        System.out.println("经纪人为歌手安排好时间~");
         human.work();
-        System.out.println("演唱后撒花~");
+        System.out.println("经纪人为歌手联系下一场演出~");
     }
 }

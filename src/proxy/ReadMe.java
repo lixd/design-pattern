@@ -1,7 +1,7 @@
 package proxy;
 
 /**
- * 更多Java原型模式信息请阅读https://www.lixueduan.com/posts/24b6c0e4.html
+ * 更多Java代理模式信息请阅读 https://www.lixueduan.com/posts/ae2a93bd.html
  *
  * @author illusoryCloud
  */
