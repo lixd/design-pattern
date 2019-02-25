@@ -13,13 +13,11 @@ Java Design Pattern Learning   Java设计模式系列demo
 
 ## 6. [装饰者模式(Decorator)](https://www.lixueduan.com/posts/75903408.html)
 
+## 7. [代理模式(Proxy)](https://www.lixueduan.com/posts/ae2a93bd.html)
 
+## 8. [外观模式(Facade)](https://www.lixueduan.com/posts/22a51705.html)
 
-## 7. 代理模式(Proxy)
-
-## 8. 外观模式(Facade)
-
-## 9. 享元模式(Flyweight)
+## 9. [享元模式(Flyweight)](https://www.lixueduan.com/posts/34e634e7.html)
 
 ## 10. 策略模式(Strategy)
 

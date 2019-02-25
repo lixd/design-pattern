@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author illusoryCloud
  */
-public class FacedeTest {
+public class FacadeTest {
     @Test
     public void facedeTest() {
         Computer computer = new Computer();
@@ -15,4 +15,5 @@ public class FacedeTest {
         System.out.println("------------------");
         computer.shutDown();
     }
+
 }
