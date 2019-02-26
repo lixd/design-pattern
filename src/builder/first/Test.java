@@ -1,5 +1,10 @@
 package builder.first;
 
+/**
+ * 建造者模式 测试类
+ *
+ * @author illusoryCloud
+ */
 public class Test {
     @org.junit.jupiter.api.Test
     public void testBuilder() {

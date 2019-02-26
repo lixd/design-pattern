@@ -4,28 +4,32 @@ import java.util.Date;
 
 /**
  * 构建的消息对象
- *有个静态内部类
+ * 有个静态内部类
+ *
  * @author illusoryCloud
  */
 public class Message {
-    /**标题*/
+    /**
+     * 标题
+     */
     private String Title;
-    /**内容*/
+    /**
+     * 内容
+     */
     private String Content;
-    /**发送者*/
+    /**
+     * 发送者
+     */
     private String From;
-    /**接收者*/
+    /**
+     * 接收者
+     */
     private String To;
-    /**时间*/
+    /**
+     * 时间
+     */
     private Date Time;
 
-    public Message(Builder builder) {
-        Title=builder.Title;
-        Content=builder.Content;
-        From=builder.From;
-        To=builder.To;
-        Time=builder.Time;
-    }
 
     @Override
     public String toString() {
@@ -36,6 +40,11 @@ public class Message {
                 ", To='" + To + '\'' +
                 ", Time=" + Time +
                 '}';
+    }
+
+
+    public static Builder newBuilder() {
+        return new Builder();
     }
 
     /**
@@ -80,8 +89,14 @@ public class Message {
             return this;
         }
 
-        public Message Build(){
-            return new Message(this);
+        public Message Build() {
+            Message message = new Message();
+            message.Title = Title;
+            message.Content = Content;
+            message.From = From;
+            message.To = To;
+            message.Time = Time;
+            return message;
         }
 
     }
