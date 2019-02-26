@@ -9,7 +9,7 @@ public class FourSingleton {
     /**
      * volatile关键字禁止指令重排序
      * 保证多线程下不会获取到未完全初始化的实例
-     * 详细请阅读：
+     * 详细请阅读：https://www.lixueduan.com/posts/e7cef119.html
      */
     private static volatile FourSingleton instance;
 
@@ -22,10 +22,11 @@ public class FourSingleton {
      *
      * @return instance 实例对象
      */
-    public FourSingleton getInstance() {
+    public static FourSingleton getInstance() {
         if (instance == null) {
             synchronized (FourSingleton.class) {
                 if (instance == null) {
+                    //非原子操作
                     instance = new FourSingleton();
                 }
             }

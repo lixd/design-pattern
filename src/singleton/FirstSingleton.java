@@ -10,9 +10,10 @@ public class FirstSingleton {
      * 一旦外部调用了静态方法，那么就会初始化完成。
      * 一个类的<clinit>只会执行一次 保证多线程情况下不会创建多个实例
      */
-    private static final FirstSingleton instance=new FirstSingleton();
+    private static final FirstSingleton INSTANCE =new FirstSingleton();
 
     /**
+     *
      * 构造函数私有化
      */
     private FirstSingleton(){}
@@ -22,6 +23,6 @@ public class FirstSingleton {
      * @return instance 实例对象
      */
     public static FirstSingleton getInstance(){
-        return instance;
+        return INSTANCE ;
     }
 }

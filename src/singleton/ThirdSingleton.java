@@ -15,9 +15,9 @@ public class ThirdSingleton {
     /**
      * synchronized 保证线程安全 但效率低
      *
-     * @return
+     * @return instance单例对象
      */
-    public synchronized ThirdSingleton getInstance() {
+    public static synchronized ThirdSingleton getInstance() {
         if (instance == null) {
             instance = new ThirdSingleton();
         }

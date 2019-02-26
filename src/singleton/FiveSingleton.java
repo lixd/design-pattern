@@ -2,6 +2,7 @@ package singleton;
 
 /**
  * 枚举式
+ * 序列化及反序列化安全
  * @author illusoryCloud
  */
 public enum FiveSingleton {
