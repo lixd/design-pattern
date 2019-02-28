@@ -3,6 +3,8 @@ package singleton;
 /**
  * 枚举式
  * 序列化及反序列化安全
+ * 更多枚举式单例如反序列化安全信息请阅读
+ * https://www.lixueduan.com/posts/dff2f393.html
  * @author illusoryCloud
  */
 public enum FiveSingleton {
