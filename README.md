@@ -19,9 +19,9 @@ Java Design Pattern Learning   Java设计模式系列demo
 
 ## 9. [享元模式(Flyweight)](https://www.lixueduan.com/posts/34e634e7.html)
 
-## 10. 策略模式(Strategy)
+## 10. [策略模式(Strategy)](https://www.lixueduan.com/posts/a7982bdc.html)
 
-## 11. 模板方法模式(Template)
+## 11. [模板方法模式(Template)](https://www.lixueduan.com/posts/57ae709c.html)
 
-## 12. 观察者模式(Observer)
+## 12. [观察者模式(Observer)](https://www.lixueduan.com/posts/48bcf013.html)
 
