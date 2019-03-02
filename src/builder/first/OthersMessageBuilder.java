@@ -5,6 +5,7 @@ import java.util.Date;
 /**
  * 具体的建造对象类 实现了Builder接口
  * 可以根据不同需求有不同的实现
+ *
  * @author illusoryCloud
  */
 public class OthersMessageBuilder implements Builder {

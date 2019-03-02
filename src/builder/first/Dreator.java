@@ -1,7 +1,7 @@
 package builder.first;
 
 /** 指导者
- *只负责保证对象各部分完整创建
+ * 只负责保证对象各部分完整创建
  * @author illusoryCloud
  */
 public class Dreator {
