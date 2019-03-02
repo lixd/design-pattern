@@ -1,10 +1,7 @@
-package builder.second;
-
-import java.util.Date;
+package observer;
 
 /**
  * 构建的消息对象
- * 有个静态内部类
  *
  * @author illusoryCloud
  */
@@ -17,31 +14,14 @@ public class Message {
      * 内容
      */
     private String content;
-    /**
-     * 发送者
-     */
-    private String from;
-    /**
-     * 接收者
-     */
-    private String to;
-    /**
-     * 时间
-     */
-    private Date time;
-
 
     @Override
     public String toString() {
         return "Message{" +
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
-                ", from='" + from + '\'' +
-                ", to='" + to + '\'' +
-                ", time=" + time +
                 '}';
     }
-
 
     public static Builder newBuilder() {
         return new Builder();
@@ -56,9 +36,6 @@ public class Message {
          */
         private String title = "未命名";
         private String content = "暂无内容";
-        private String from = "unknow";
-        private String to = "unknow";
-        private Date time = new Date();
 
         /**
          * 设置消息标题
@@ -76,28 +53,11 @@ public class Message {
             return this;
         }
 
-        public Builder setFrom(String from) {
-            this.from = from;
-            return this;
-        }
-
-        public Builder setTo(String to) {
-            this.to = to;
-            return this;
-        }
-
-        public Builder setTime(Date time) {
-            this.time = time;
-            return this;
-        }
 
         public Message build() {
             Message message = new Message();
             message.title = title;
             message.content = content;
-            message.from = from;
-            message.to = to;
-            message.time = time;
             return message;
         }
 

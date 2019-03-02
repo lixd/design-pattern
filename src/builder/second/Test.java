@@ -15,7 +15,7 @@ public class Test {
                 .setFrom("这是消息发送者")
                 .setTo("这是消息接收者")
                 .setTime(new Date())
-                .Build();
+                .build();
         System.out.println(build.toString());
     }
 }

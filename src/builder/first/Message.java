@@ -9,65 +9,75 @@ import java.util.Date;
  * @author illusoryCloud
  */
 public class Message {
-    /** 标题 */
-    private String Title;
-    /** 内容 */
-    private String Content;
-    /** 发送者 */
-    private String From;
-    /** 接收者 */
-    private String To;
-    /** 时间 */
-    private Date Time;
+    /**
+     * 标题
+     */
+    private String title;
+    /**
+     * 内容
+     */
+    private String content;
+    /**
+     * 发送者
+     */
+    private String from;
+    /**
+     * 接收者
+     */
+    private String to;
+    /**
+     * 时间
+     */
+    private Date time;
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.content = content;
     }
 
     public String getFrom() {
-        return From;
+        return from;
     }
 
     public void setFrom(String from) {
-        From = from;
+        this.from = from;
     }
 
     public String getTo() {
-        return To;
+        return to;
     }
 
     public void setTo(String to) {
-        To = to;
+        this.to = to;
     }
 
     public Date getTime() {
-        return Time;
+        return time;
     }
 
     public void setTime(Date time) {
-        Time = time;
+        this.time = time;
     }
 
     @Override
     public String toString() {
         return "Message{" +
-                "Title='" + Title + '\'' +
-                ", Content='" + Content + '\'' +
-                ", From='" + From + '\'' +
-                ", To='" + To + '\'' +
-                ", Time=" + Time +
+                "title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", time=" + time +
                 '}';
     }
 }
