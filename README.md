@@ -25,3 +25,5 @@ Java Design Pattern Learning   Java设计模式系列demo
 
 ## 12. [观察者模式(Observer)](https://www.lixueduan.com/posts/48bcf013.html)
 
+## 13. [组合模式(composite)](https://www.lixueduan.com/posts/a340063f.html)
+
